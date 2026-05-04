@@ -1,0 +1,87 @@
+/*Basic stuff*/
+body{
+
+    margin:0;
+
+    width:100vw;
+    height:100vh;
+}
+
+@font-face{
+    font-family: CreatoDisplay-Regular;
+    src: url(Fonts/CreatoDisplay-Regular.otf);
+}
+* {
+    font-family:CreatoDisplay-Regular;
+}
+/*End of basic stuff*/
+/*Classes*/
+
+/*Main nav controlling all of the other divs*/
+.maindiv{
+    display:grid;
+    grid-template-rows:1fr 12fr 1fr;
+    grid-row-gap: 1vh;
+    width:100%;
+    height:100%;
+}
+
+/*top navigation bar*/
+.topnav{
+
+    /*non dependent*/
+    top:0.5vh; 
+    bottom:10px;
+    width:100%;
+
+    display:grid;
+    grid-template-columns:2fr 6fr 3fr;
+
+    position:relative;
+
+    /*dependent inside containers*/
+  
+
+}
+.topnav div{
+
+    
+
+    font-size:var(--TopnavFontSize);
+
+    /*testing v*/
+    background-color:#bd3456;
+}
+/*end of navigation bar*/
+
+/*loadingarea (gamearea)*/
+.loadingarea{
+    position:relative;
+  
+
+    /*Testing v*/
+    background-color:#ba7a9f;
+}
+
+
+/*End of loadingarea*/
+
+/*Bottom bar*/
+.bottombar{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+
+    /*Testing v*/
+    background-color:#b0588c
+}
+.copyright{
+    text-align:left;
+    min-height:100%; /**/
+    max-width:var(--CopyrightMaxWidth); /*33vvw*/
+    font-size:var(--GlobalFontSize); /*1.5vh*/
+}
+.creator{
+    text-align:right;
+    font-size:var(--GlobalFontSize); /*1.5vh*/
+}
+

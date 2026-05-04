@@ -5,32 +5,11 @@ Container for settings and so on
 .container{
     max-width:35%;
     display:grid;
-    grid-template-columns: var(--a1fr) var(--a2fr) var(--a3fr) var(--a4fr) var(--a5fr) var(--a6fr);
+    grid-template-columns: var(--a0fr) var(--a1fr) var(--a2fr) var(--a3fr) var(--a4fr) var(--a5fr);
 }
-.container div.a1item{
+.container div{
     background-color:#c88686;
     text-align:center;
 }
 
-.container div.a2item{
-    background-color:#b87b7b;
-    text-align:center;
-}
-
-.container div.a3item{
-    background-color:#ae7474;
-    text-align:center;
-}
-.container div.a4item{
-    background-color:#a46e6e;
-    text-align:center;
-}
-.container div.a5item{
-    background-color:#a16f6f;
-    text-align:center;
-}
-.container div.a6item{
-    background-color:#9e6a6a;
-    text-align:center;
-}
 
